@@ -1,0 +1,92 @@
+.menu {
+  &__open {
+    display: block;
+  }
+
+  &__close {
+    display: none;
+  }
+
+  &__backdrop {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background: rgba(190, 190, 190, 0.4);
+  }
+
+  // display: none;
+  width: 100%;
+  height: 100vh;
+  background-color: #113869;
+  max-width: 400px;
+
+  &__header {
+    background: linear-gradient(91.02deg, #4281d0 0%, #072448 100%);
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    gap: 16px;
+  }
+
+  &__close-button {
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+  }
+
+  &__nike {
+    width: 83px;
+    height: 53px;
+  }
+
+  &__nav-link {
+    display: block;
+    padding: 12px 16px;
+    color: $white;
+    line-height: 20px;
+    font-weight: 500;
+
+    &:hover {
+      background-color: $white;
+      color: #113869;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+  }
+
+  &__label {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    border-radius: 24px;
+    padding: 6px 4px;
+    background: #e01111;
+    color: $white;
+    font-size: 10px;
+    font-weight: 500;
+    text-align: center;
+    min-width: 34px;
+  }
+
+  &__nav-item {
+    position: relative;
+    padding-left: 1px;
+    padding-right: 1px;
+
+    // height: 100%;
+
+    // display: flex;
+    // justify-content: space-between;
+    // gap: 16px;
+  }
+
+  &__nav-list {
+    width: 100%;
+    height: 100%;
+  }
+}

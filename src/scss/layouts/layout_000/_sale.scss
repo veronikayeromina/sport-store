@@ -1,0 +1,145 @@
+.sale {
+  background: linear-gradient(
+    360deg,
+    #e0c340 0%,
+    #dfc23e 3.93%,
+    #e1c441 7.23%,
+    #e3c743 10.23%,
+    #e4c542 13.14%,
+    #e6c744 16.22%,
+    #e7c845 19.84%,
+    #e5c643 24.38%,
+    #e6c945 31%,
+    #e3c743 37.19%,
+    #e9ca48 43.33%,
+    #edce49 50.36%,
+    #f0d44c 56.57%,
+    #f4d84f 62.71%,
+    #f6da52 67.12%,
+    #f7db53 73.77%,
+    #f9dd55 79.08%,
+    #f9df56 85.64%,
+    #fae157 93.5%,
+    #f9df56 100%
+  );
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__photo {
+    img {
+      width: 100%;
+      max-width: 100%;
+      height: 100%;
+      vertical-align: top;
+      max-height: 829px;
+    }
+  }
+
+  &__gradient {
+    position: relative;
+    z-index: 1;
+    font-size: rem(56px);
+    font-weight: 900;
+    font-family: $secondaryFontFamily;
+    background: linear-gradient(
+      105deg,
+      #4280cf 0%,
+      #3975c0 8.12%,
+      #0c315f 45.1%,
+      #0a2444 58.65%,
+      #03234b 81.56%,
+      #4280cf 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  &__span {
+    position: relative;
+
+    &::after {
+      content: "";
+      background-color: #fff;
+      position: absolute;
+      left: -10px;
+      right: -8px;
+      top: 0;
+      height: 93%;
+      z-index: 0;
+      transform: rotate(-2deg);
+    }
+  }
+
+  &__title {
+    font-size: rem(56px);
+    font-weight: 900;
+    line-height: 90px;
+    font-family: $secondaryFontFamily;
+    background: linear-gradient(
+      105deg,
+      #4280cf 0%,
+      #3975c0 8.12%,
+      #0c315f 45.1%,
+      #0a2444 58.65%,
+      #03234b 81.56%,
+      #4280cf 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__content {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__subtitle {
+    font-size: rem(22px);
+    text-align: center;
+    font-weight: 500;
+    margin: 30px 0 30px 0;
+  }
+
+  &__date {
+    font-family: $secondaryFontFamily;
+    font-size: rem(26px);
+    margin-bottom: 20px;
+    background: linear-gradient(
+      105deg,
+      #4280cf 0%,
+      #3975c0 8.12%,
+      #0c315f 45.1%,
+      #0a2444 58.65%,
+      #03234b 81.56%,
+      #4280cf 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__terms {
+    font-size: rem(22px);
+    margin-bottom: 43px;
+  }
+
+  &__btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 13px 30px;
+    background: #113869;
+    color: $white;
+    cursor: pointer;
+  }
+}

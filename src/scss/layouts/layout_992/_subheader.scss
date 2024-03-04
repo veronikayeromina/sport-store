@@ -1,0 +1,36 @@
+.subheader {
+  display: block;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+
+  &__list {
+    display: flex;
+    gap: 28px;
+  }
+
+  &__nav_link {
+    color: $black;
+    font-size: 13px;
+  }
+
+  &__title {
+    font-family: $secondaryFontFamily;
+    font-size: 18px;
+    letter-spacing: 0.18px;
+    color: $black;
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: rem(13px);
+  }
+}

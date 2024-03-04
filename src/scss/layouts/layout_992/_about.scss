@@ -1,0 +1,16 @@
+.about {
+  &__title {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: " ";
+      background-color: #113869;
+      height: 4px;
+      width: 56%;
+      top: 40px;
+      left: 100%;
+      margin-left: 20px;
+    }
+  }
+}

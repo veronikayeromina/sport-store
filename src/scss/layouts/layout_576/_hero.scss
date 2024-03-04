@@ -1,0 +1,18 @@
+.hero {
+  &__filled {
+    font-size: 70px;
+    margin-top: -45px;
+  }
+
+  &__transparent {
+    font-size: 70px;
+  }
+
+  &__img {
+    margin-top: -70px;
+  }
+
+  &__desc {
+    font-size: 20px;
+  }
+}

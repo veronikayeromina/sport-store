@@ -1,0 +1,111 @@
+.hero {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  text-align: center;
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__filled {
+    background: linear-gradient(
+      105deg,
+      #4280cf 0%,
+      #3975c0 8.12%,
+      #0c315f 45.1%,
+      #0a2444 58.65%,
+      #03234b 81.56%,
+      #4280cf 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: rem(45px);
+    font-family: $secondaryFontFamily;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-top: -35px;
+    margin-right: -32px;
+  }
+
+  &__transparent {
+    font-family: $secondaryFontFamily;
+    color: transparent;
+    font-weight: 700;
+    line-height: 62px;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: rgba(12, 49, 95, 0.25);
+    font-size: rem(40px);
+    text-transform: uppercase;
+  }
+
+  &__img {
+    max-width: 100%;
+    width: 100%;
+    object-fit: contain;
+    margin-top: -50px;
+  }
+
+  &__cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  &__block {
+    display: flex;
+    gap: 15px;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    padding: 13px 30px;
+    background: #113869;
+    color: $white;
+    cursor: pointer;
+    justify-content: center;
+    text-transform: uppercase;
+  }
+
+  &__desc {
+    color: $black;
+  }
+
+  &__play {
+    width: 16px;
+    height: 16px;
+    // align-items: center;
+  }
+
+  &__button {
+    position: relative;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+    background: #113869;
+    border-radius: 100%;
+
+    &:hover:before {
+      width: calc(100% + 2px);
+      height: calc(100% + 2px);
+      left: -1px;
+      top: -1px;
+      opacity: 1;
+    }
+    &::before {
+      content: "";
+      background-color: rgba(255, 255, 255, 0.1);
+      position: absolute;
+      width: 0;
+      height: 0;
+      left: 50%;
+      top: 50%;
+      opacity: 0;
+      transition: all 0.3s;
+      z-index: 1;
+    }
+  }
+}

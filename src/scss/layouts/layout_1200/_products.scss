@@ -1,0 +1,13 @@
+.products {
+  &__title {
+    font-size: rem(56px);
+    line-height: 70px;
+    font-weight: 700;
+  }
+
+  &__cards {
+    gap: 21px;
+    margin-top: 60px;
+    margin-bottom: 94px;
+  }
+}

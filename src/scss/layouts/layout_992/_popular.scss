@@ -1,0 +1,15 @@
+.popular {
+  &__title {
+    font-size: 56px;
+    line-height: 84px;
+  }
+
+  &__subtitle {
+    font-size: rem(24px);
+    line-height: 28px;
+  }
+
+  &__box {
+    margin-bottom: 60px;
+  }
+}

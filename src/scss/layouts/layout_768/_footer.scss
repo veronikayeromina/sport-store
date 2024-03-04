@@ -1,0 +1,13 @@
+.footer {
+  &__nav-title {
+    font-size: rem(20px);
+  }
+
+  &__nav_link {
+    font-size: rem(22px);
+  }
+
+  &__list {
+    gap: 24px;
+  }
+}

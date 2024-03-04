@@ -1,0 +1,131 @@
+.products {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: #fafafa;
+
+  &__title {
+    background: linear-gradient(
+      105deg,
+      #4280cf 0%,
+      #3975c0 8.12%,
+      #0c315f 45.1%,
+      #0a2444 58.65%,
+      #03234b 81.56%,
+      #4280cf 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: rem(40px);
+    font-family: $secondaryFontFamily;
+    text-align: center;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+  }
+
+  &__cards {
+    margin-top: 20px;
+    margin-bottom: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    grid-row: span 2;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s;
+  }
+
+  &__block {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+
+    &:hover {
+      .products__icon {
+        transform: translateY(0);
+      }
+    }
+  }
+}
+
+.form {
+  max-width: 487.31px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  // justify-content: center;
+
+  &__title {
+    margin-bottom: 33px;
+    font-size: rem(28px);
+    text-align: center;
+    font-family: $secondaryFontFamily;
+    font-weight: 600;
+    background: linear-gradient(
+      105deg,
+      #4280cf 0%,
+      #3975c0 8.12%,
+      #0c315f 45.1%,
+      #0a2444 58.65%,
+      #03234b 81.56%,
+      #4280cf 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+  }
+
+  &__input {
+    color: #717171;
+    font-size: rem(18px);
+    padding: 6px 12px;
+    height: 38px;
+    width: 100%;
+    border: 0px;
+    border-bottom: 2px solid #113869;
+
+    &-wrapper {
+      width: 100%;
+    }
+
+    &-error {
+      border-bottom: 2px solid red;
+    }
+
+    &-message {
+      color: red;
+      margin-top: 10px;
+    }
+  }
+
+  &__btn {
+    text-transform: uppercase;
+    font-size: rem(18px);
+    color: #113869;
+    border: 0px;
+    border-bottom: 2px solid #113869;
+    width: 91.561px;
+    padding: 8px 15px;
+  }
+}

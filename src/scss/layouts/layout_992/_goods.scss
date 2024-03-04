@@ -1,0 +1,7 @@
+.goods {
+  &__cards {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 34px;
+    row-gap: 47px;
+  }
+}

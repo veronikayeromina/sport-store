@@ -1,0 +1,21 @@
+.benefits {
+  background: #113869;
+
+  &__box {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__block {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__title {
+    color: $white;
+    line-height: 30px;
+  }
+}

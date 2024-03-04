@@ -1,0 +1,10 @@
+.products {
+  &__cards {
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 30px;
+  }
+}
+
+.form {
+  gap: 30px;
+}

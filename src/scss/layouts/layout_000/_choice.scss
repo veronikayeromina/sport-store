@@ -1,0 +1,95 @@
+.choice {
+  padding-bottom: 35px;
+  max-width: 1300px;
+
+  &__cards {
+    display: grid;
+    gap: 30px;
+  }
+
+  &__btn {
+    cursor: pointer;
+  }
+
+  &__card {
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 18px;
+    max-width: 100%;
+    transition: all 0.25s ease-in-out;
+
+    &:hover {
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  &__img {
+    border-radius: 18px 0 0 18px;
+    position: relative;
+    width: 126px;
+    height: 100%;
+  }
+
+  &__shoes {
+    position: absolute;
+    bottom: -20px;
+    left: -33px;
+    rotate: -30deg;
+    width: 151.708px;
+    height: 151.708px;
+  }
+
+  &__content {
+    padding: 10px;
+  }
+
+  &__title {
+    font-weight: 500;
+    line-height: 16px;
+    // margin-bottom: 5px;
+    color: #113869;
+    text-transform: uppercase;
+    font-size: rem(14px);
+  }
+
+  &__price {
+    font-weight: 700;
+    line-height: 16px;
+    margin-bottom: 10px;
+    color: $black;
+    text-transform: uppercase;
+    font-size: rem(14px);
+  }
+
+  &__subtitle {
+    color: $black;
+    font-size: rem(12px);
+    line-height: 14px;
+    margin-bottom: 8px;
+    font-weight: 400;
+  }
+
+  &__btn {
+    font-family: $secondaryFontFamily;
+    color: #113869;
+    font-weight: 600;
+    line-height: 24px;
+    font-size: rem(16px);
+  }
+}
+
+.bg-pink {
+  background-color: rgba(161, 3, 74, 0.5);
+}
+
+.bg-dark_blue {
+  background-color: #2d5f84;
+}
+
+.bg-green {
+  background-color: rgba(158, 208, 101, 1);
+}
+
+.bg-blue {
+  background-color: rgba(27, 79, 135, 1);
+}

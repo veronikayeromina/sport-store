@@ -1,0 +1,64 @@
+.header {
+  background: #113869;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 16px;
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  &__nike {
+    width: 80px;
+    height: 63px;
+  }
+
+  &__burger {
+    width: 24px;
+    height: 20px;
+  }
+
+  &__icons {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  &__title {
+    font-family: $secondaryFontFamily;
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: $white;
+    display: none;
+  }
+
+  &__nav {
+    display: none;
+  }
+
+  &__icon {
+    cursor: pointer;
+    color: $white;
+    padding: 8px;
+    transition: all 300ms;
+    position: relative;
+    &:hover {
+      background-color: $white;
+      color: #113869;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    &_number {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+}

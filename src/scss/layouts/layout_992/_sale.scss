@@ -1,0 +1,31 @@
+.sale {
+  &__box {
+    flex-direction: row;
+  }
+
+  &__content {
+    align-items: flex-start;
+    max-width: 537px;
+  }
+
+  &__subtitle {
+    text-align: initial;
+    font-size: rem(28px);
+    line-height: 39px;
+  }
+
+  &__date {
+    font-size: rem(36px);
+  }
+
+  &__terms {
+    font-size: rem(28px);
+  }
+
+  &__btn {
+    font-size: 18px;
+    line-height: 50px;
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+}

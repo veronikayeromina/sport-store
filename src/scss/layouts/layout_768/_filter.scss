@@ -1,0 +1,25 @@
+.filter {
+  &__box {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  &__block {
+    font-size: 20px;
+    gap: 24px;
+  }
+
+  &__btn {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  &__show {
+    gap: 24px;
+  }
+
+  &__sort {
+    gap: 24px;
+  }
+}

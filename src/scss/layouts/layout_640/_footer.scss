@@ -1,0 +1,8 @@
+.footer {
+  &__nav {
+    width: max-content;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 50px;
+    padding-top: 30px;
+  }
+}

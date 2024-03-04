@@ -1,0 +1,7 @@
+.questions {
+  &__cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-top: 70px;
+  }
+}

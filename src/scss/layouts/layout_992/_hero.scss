@@ -1,0 +1,55 @@
+.hero {
+  padding-top: 65px;
+  padding-bottom: 65px;
+
+  &__box {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+    // justify-content: flex-start;
+    position: relative;
+    align-items: center;
+    min-height: 300px;
+    margin-top: -10px;
+  }
+
+  &__cta {
+    min-width: 361px;
+    z-index: 10;
+    align-items: flex-start;
+  }
+
+  &__img {
+    right: 0;
+    position: absolute;
+    width: 80%;
+    max-width: 943.37px;
+  }
+
+  &__btn {
+    min-width: 196px;
+    height: 58px;
+    font-size: rem(18px);
+  }
+
+  &__button {
+    width: 58px;
+    height: 58px;
+  }
+
+  &__desc {
+    font-size: 22px;
+    line-height: 35px;
+  }
+
+  &__filled {
+    font-size: 165px;
+    margin-top: -57px;
+    letter-spacing: -9.9px;
+  }
+
+  &__transparent {
+    font-size: 140px;
+    letter-spacing: -4.2px;
+  }
+}
